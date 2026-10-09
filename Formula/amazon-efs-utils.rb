@@ -174,8 +174,6 @@ class AmazonEfsUtils < Formula
       venv.pip_install resource(r)
     end
 
-    inreplace buildpath/"src/mount_efs/__init__.py",
-              "#!/usr/bin/env python3", "#!#{libexec}/bin/python3"
     inreplace buildpath/"src/efs_utils_common/constants.py", "/etc", libexec/"etc"
     inreplace buildpath/"src/efs_utils_common/constants.py", "/var", libexec/"var"
     inreplace buildpath/"src/watchdog/__init__.py", "/etc", libexec/"etc"
