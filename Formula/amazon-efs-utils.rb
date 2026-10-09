@@ -15,10 +15,10 @@
 class AmazonEfsUtils < Formula
   include Language::Python::Virtualenv
 
-  version "2.4.2"
-  sha256 "0b1249279ec642b981bb775614790d2d206297cf96ade22241fa0b8b13cafb98"
-  
-  url "https://aws-homebrew.s3.us-west-2.amazonaws.com/formula/amazon-efs-utils/v#{version}.tar.gz"
+  version "3.3.3"
+  sha256 "052393c93be97dcc48f0c9e27f57596d64744bdddd5ebdb2eaab9261b264ae0b"
+
+  url "https://github.com/aws/efs-utils/archive/refs/tags/v#{version}.tar.gz"
   desc "Utilities for Amazon Elastic File System (EFS)"
   homepage "https://aws.amazon.com/efs/"
   license "MIT"
@@ -37,8 +37,8 @@ class AmazonEfsUtils < Formula
   end
 
   resource "botocore" do
-    url "https://aws-homebrew.s3-us-west-2.amazonaws.com/resource/e79f9c16/botocore-1.42.90.tar.gz"
-    sha256 "234c39492cd3088acb021d999e3392a4d50238ae3e70b9d9ae1504c30d9009d1"
+    url "https://files.pythonhosted.org/packages/a7/d8/7a2320aabf1b1e62580e990f8a52760e396f4ec56e3ebcbce07d23acc031/botocore-1.43.110.tar.gz"
+    sha256 "888cd54d59502e2195dac30805e5c08dd1be5416932a3793373e81b8f463e006"
   end
 
   resource "configparser" do
@@ -47,8 +47,8 @@ class AmazonEfsUtils < Formula
   end
 
   resource "coverage" do
-    url "https://aws-homebrew.s3-us-west-2.amazonaws.com/resource/e79f9c16/coverage-7.13.5.tar.gz"
-    sha256 "c81f6515c4c40141f83f502b07bbfa5c240ba25bbe73da7b33f1e5b6120ff179"
+    url "https://files.pythonhosted.org/packages/2f/55/d1eaf3e73781174340a00dc1ba2aee8a65f82fadb18e2797b192b6b3925b/coverage-7.16.2.tar.gz"
+    sha256 "ca64d9f1f384f151b9511bec01126072acd2f313439f8ed015a22d8790aab6fa"
   end
 
   resource "entrypoints" do
@@ -57,8 +57,8 @@ class AmazonEfsUtils < Formula
   end
 
   resource "flake8" do
-    url "https://aws-homebrew.s3-us-west-2.amazonaws.com/resource/e79f9c16/flake8-7.3.0.tar.gz"
-    sha256 "fe044858146b9fc69b551a4b490d69cf960fcb78ad1edcb84e7fbb1b4a8e3872"
+    url "https://files.pythonhosted.org/packages/c2/94/85870fc02dfe4ab0885c440e7e41f6a986b10e43eca6717e90f8ce1215cc/flake8-7.4.1.tar.gz"
+    sha256 "84ea5afcaf344487b0ea5baaebb8100f4cfaebc01f755998f75876664029f587"
   end
 
   resource "funcsigs" do
@@ -82,18 +82,18 @@ class AmazonEfsUtils < Formula
   end
 
   resource "more-itertools" do
-    url "https://aws-homebrew.s3-us-west-2.amazonaws.com/resource/e79f9c16/more_itertools-11.0.2.tar.gz"
-    sha256 "392a9e1e362cbc106a2457d37cabf9b36e5e12efd4ebff1654630e76597df804"
+    url "https://files.pythonhosted.org/packages/de/1d/f4da6f02cdffe04d6362210b807146a26044c88d839208aec273bb0d9184/more_itertools-11.1.0.tar.gz"
+    sha256 "48e8f4d9e7e5878571ecf6f2b4e57634f93cd474cc8cfbd2376f2d11b396e30d"
   end
 
   resource "packaging" do
-    url "https://aws-homebrew.s3-us-west-2.amazonaws.com/resource/e79f9c16/packaging-26.1.tar.gz"
-    sha256 "f042152b681c4bfac5cae2742a55e103d27ab2ec0f3d88037136b6bfe7c9c5de"
+    url "https://files.pythonhosted.org/packages/7d/fa/3944b40b07da9ce895c0e6303a5ab7d53da063554f534556b134a54d6093/packaging-26.3.tar.gz"
+    sha256 "94edc256424af38762eb31306eed28beb9f0efc50a8837492c9d6fd6004aed79"
   end
 
   resource "pbr" do
-    url "https://aws-homebrew.s3-us-west-2.amazonaws.com/resource/e79f9c16/pbr-7.0.3.tar.gz"
-    sha256 "b46004ec30a5324672683ec848aed9e8fc500b0d261d40a3229c2d2bbfcedc29"
+    url "https://files.pythonhosted.org/packages/6b/8d/ce438c28c7958e33184e8ac851ea2225b47a41e5e9e708fa3bddba631135/pbr-7.1.3.tar.gz"
+    sha256 "9a4a85b84e906337708009af0b5f5cdabeeb72d4dc213c9e97974da54fd9acc5"
   end
 
   resource "pluggy" do
@@ -107,23 +107,23 @@ class AmazonEfsUtils < Formula
   end
 
   resource "pycodestyle" do
-    url "https://aws-homebrew.s3-us-west-2.amazonaws.com/resource/e79f9c16/pycodestyle-2.14.0.tar.gz"
-    sha256 "c4b5b517d278089ff9d0abdec919cd97262a3367449ea1c8b49b91529167b783"
+    url "https://files.pythonhosted.org/packages/86/df/178e41c9ed0ff33c23b3f3757e4e658c889f9abc5ad76ece6cd607b12e9c/pycodestyle-2.15.0.tar.gz"
+    sha256 "318f5db083869b4c4dad922d0b11124fb27ab181b6730b93371da671e31bd50e"
   end
 
   resource "pyflakes" do
-    url "https://aws-homebrew.s3-us-west-2.amazonaws.com/resource/e79f9c16/pyflakes-3.4.0.tar.gz"
-    sha256 "b24f96fafb7d2ab0ec5075b7350b3d2d2218eab42003821c06344973d3ea2f58"
+    url "https://files.pythonhosted.org/packages/2c/1b/3ba8bd62723cfe1b651c4e4b89b33767fce7a08bb800491cf1d3dd3a7716/pyflakes-4.0.3.tar.gz"
+    sha256 "94762a3a5a343a79b28754f96c554bce057a592a4896907d73f0369fe824e053"
   end
 
   resource "pyparsing" do
-    url "https://aws-homebrew.s3-us-west-2.amazonaws.com/resource/e79f9c16/pyparsing-3.3.2.tar.gz"
-    sha256 "c777f4d763f140633dcb6d8a3eda953bf7a214dc4eff598413c070bcdc117cbc"
+    url "https://files.pythonhosted.org/packages/e4/11/b213bebff182584360cb8d17c72c1677fec5c5c228de439e63bcf8ab1c8f/pyparsing-3.3.3.tar.gz"
+    sha256 "928ae7e20211f3b6f3915a72f06a0cfd29ab9d24279dd6346b6b1a7146397d36"
   end
 
   resource "pytest" do
-    url "https://aws-homebrew.s3-us-west-2.amazonaws.com/resource/e79f9c16/pytest-9.0.3.tar.gz"
-    sha256 "b86ada508af81d19edeb213c681b1d48246c1a91d304c6c81a427674c17eb91c"
+    url "https://files.pythonhosted.org/packages/e4/47/b9efed96c114afcfa3c9d3fe98a76a1d14c74a9e266d397cf6eb64be5e01/pytest-9.1.1.tar.gz"
+    sha256 "1088fbde8f2b49d95a549a195707afa7a76a3ce9bcadc26b6d71f0ffda5fe313"
   end
 
   resource "pytest-cov" do
@@ -142,8 +142,8 @@ class AmazonEfsUtils < Formula
   end
 
   resource "pytest-mock" do
-    url "https://aws-homebrew.s3-us-west-2.amazonaws.com/resource/e79f9c16/pytest_mock-3.15.1.tar.gz"
-    sha256 "1849a238f6f396da19762269de72cb1814ab44416fa73a8686deac10b0d87a0f"
+    url "https://files.pythonhosted.org/packages/7a/7f/6ed29931d5c8cd396e7c0a55412e6cc88020373365c8685985dea53d26d7/pytest_mock-3.16.0.tar.gz"
+    sha256 "5a8395528b8f498205f3718f575228d0edaed7425fff638f87d1a6c3e0383636"
   end
 
   resource "python-dateutil" do
@@ -157,13 +157,13 @@ class AmazonEfsUtils < Formula
   end
 
   resource "urllib3" do
-    url "https://aws-homebrew.s3-us-west-2.amazonaws.com/resource/e79f9c16/urllib3-2.6.3.tar.gz"
-    sha256 "1b62b6884944a57dbe321509ab94fd4d3b307075e0c2eae991ac71ee15ad38ed"
+    url "https://files.pythonhosted.org/packages/e3/05/b17359e1cefb4f909b5e40b1b90a496d987258916dbbf88e842c729f510e/urllib3-2.8.0.tar.gz"
+    sha256 "63bf2ead4c879426ebf22ef2a781eeb4aa3b4ae798a0435506f8687fd5bb9b63"
   end
 
   resource "wcwidth" do
-    url "https://aws-homebrew.s3-us-west-2.amazonaws.com/resource/e79f9c16/wcwidth-0.6.0.tar.gz"
-    sha256 "cdc4e4262d6ef9a1a57e018384cbeb1208d8abbc64176027e2c2455c81313159"
+    url "https://files.pythonhosted.org/packages/f0/b4/7830542634bb2d3e62aa3b586a72d5b3b6c91c3168929e7000ef3fed041d/wcwidth-0.9.2.tar.gz"
+    sha256 "ae0ef90b90f6af38b54f1fe6d58662ec33b3cb4b8391958a62416d654231727b"
   end
 
   def install
@@ -174,8 +174,10 @@ class AmazonEfsUtils < Formula
       venv.pip_install resource(r)
     end
 
-    inreplace buildpath/"src/mount_efs/__init__.py", "/etc", libexec/"etc"
-    inreplace buildpath/"src/mount_efs/__init__.py", "/var", libexec/"var"
+    inreplace buildpath/"src/mount_efs/__init__.py",
+              "#!/usr/bin/env python3", "#!#{libexec}/bin/python3"
+    inreplace buildpath/"src/efs_utils_common/constants.py", "/etc", libexec/"etc"
+    inreplace buildpath/"src/efs_utils_common/constants.py", "/var", libexec/"var"
     inreplace buildpath/"src/watchdog/__init__.py", "/etc", libexec/"etc"
     inreplace buildpath/"src/watchdog/__init__.py", "/var", libexec/"var"
     inreplace buildpath/"dist/efs-utils.conf", "/etc", libexec/"etc"
@@ -196,6 +198,8 @@ class AmazonEfsUtils < Formula
     (prefix/"bin").mkpath
     bin.install buildpath/"src/watchdog/__init__.py" => "amazon-efs-mount-watchdog"
     bin.install buildpath/"src/mount_efs/__init__.py" => "mount.efs"
+    (bin/"efs_utils_common").install Dir[buildpath/"src/efs_utils_common/*.py"]
+    (bin/"mount_efs").install Dir[buildpath/"src/mount_efs/*.py"]
 
     (libexec/"var/log/amazon/efs").mkpath
 
@@ -222,11 +226,11 @@ class AmazonEfsUtils < Formula
         sudo rm /Library/Filesystems/efs.fs/Contents/Resources/mount_efs
 
       To enable watchdog for TLS mounts:
-        sudo cp #{libexec}/amazon-efs-mount-watchdog.plist /Library/LaunchAgents
-        sudo launchctl load /Library/LaunchAgents/amazon-efs-mount-watchdog.plist
+        sudo cp #{libexec}/amazon-efs-mount-watchdog.plist /Library/LaunchDaemons
+        sudo launchctl bootstrap system /Library/LaunchDaemons/amazon-efs-mount-watchdog.plist
 
       To disable watchdog for TLS mounts:
-          sudo launchctl unload /Library/LaunchAgents/amazon-efs-mount-watchdog.plist
+          sudo launchctl bootout system/amazon-efs-mount-watchdog
     EOS
   end
 
